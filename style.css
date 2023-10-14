@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .container-pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    height: 630px;
+    width: 650px;
+    background-color: #74CB48;
+    overflow: hidden; /* Adicionado overflow: hidden; para evitar que o conteúdo vaze */
+  }
+  
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+    gap: 5rem;
+  }
+  
+  .inputs input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #6dbd46;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin: 5px 0; /* Adicionado espaçamento vertical entre os inputs */
+  }
+
+  .pokemonName{
+    margin-top: 1rem;
+  }
+  
+  .pokemon-img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .base-stats {
+    color: #6dbd46;
+    text-align: center;
+  }
+  
+  .pokemonDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    width: 98%;
+    height: 48.5%;
+    border-radius: 15px;
+  }
+  
+  .pokemon-type {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os spans quebrem para a próxima linha */
+    justify-content: center;
+    gap: 10px; /* Reduzido o espaço entre os spans */
+  }
+  
+  .pokemon-type span {
+    background-color: purple;
+    padding: 4px;
+    border-radius: 10px;
+    color: #fff;
+    width: 65px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 5px; /* Adicionado espaçamento entre os spans */
+  }
+
+  .stats{
+    
+  }
+  
+  .descriptions {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Centralizar verticalmente todos os elementos */
+    font-weight: bolder;
+  }
+  
+  .desc-number {
+    /* Estilos do elemento .desc-number */
+  }
+  
+  .desc-bar {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente os elementos .desc-bar */
+    width: 100%;
+    height: 7px;
+  }
+
+  .desc-outer{
+    background-color: rgba(116, 203, 72, 0.3);
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    width: 50%;
+    height: 0.3rem;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .desc-inner {
+    background-color: rgb(203, 72, 72);
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+    width: 45%;
+  }
+  
+
